@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <script src="https://kit.fontawesome.com/8eb4f0837a.js" crossorigin="anonymous"></script>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" defer />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <script src="js/app.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href=""><i class="fa-solid fa-bars"></i></a>
+          </li>
+          <li class="icons">
+            <a><i class="fa-solid fa-house"></i></a>
+            <a><i class="fa-solid fa-scissors"></i></a>
+            <a><i class="fa-solid fa-closed-captioning"></i></a>
+            <a><i class="fa-solid fa-microphone"></i></a>
+          </li>
+          <li></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Swiper -->
+    <main>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" id="sec1">
+            <section>
+              <div class="sectionBox home">
+                <div class="homeHeader">
+                  <h4>JangSoHee</h4>
+                </div>
+                <div class="displayCenter homeMain">
+                  <div>
+                    <div class="mainTitle">
+                      <div class="displayCenter">
+                        <h2>VIDEO EDITING</h2>
+                        <h4>&</h4>
+                      </div>
+                      <h2>MOTION GRAPHIC</h2>
+                    </div>
+                    <div>
+                      <div class="mainText">
+                        <p>타이포그래피</p>
+                        <p>•</p>
+                        <p>자막스크립트</p>
+                        <p>•</p>
+                        <p>인터뷰 편집</p>
+                        <p>•</p>
+                        <p>웹 퍼블리싱</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile">
+                    <img src="image/profile.jpg" alt="">
+                  </div>
+                </div>
+                <div class="homeFooter">
+                  <h4>Skills</h4>
+                  <div class="displayCenter skills">
+                    <div>
+                      <h3>After Effects</h3><img src="./image/adobe-after-effects.png" alt="">
+                    </div>
+                    <div>
+                      <h3>Premiere Pro</h3><img src="./image/adobe-premiere-pro.png" alt="">
+                    </div>
+                    <div>
+                      <h3>PhotoShop</h3><img src="./image/adobe-photoshop.png" alt="">
+                    </div>
+                    <div>
+                      <h3>Visual Studio Code</h3><img src="./image/visual-studio-code.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-slide" id="sec2">
+            <section>
+              <div class="sectionBox">
+                <h1>TYPOGRAPHY</h1>
+                <div class="videoBox">
+                  <video src="videos/typo.mp4" controls></video>
+
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-slide" id="sec3">
+            <section>
+              <div class="sectionBox">
+                <h1>SUBTITLE DESIGN</h1>
+                <div class="videoBox">
+                  <video src="videos/wokrflow.mp4" controls></video>
+
+                </div>
+
+              </div>
+            </section>
+          </div>
+          <div class="swiper-slide" id="sec4">
+            <section>
+              <div class="sectionBox">
+                <h1>INTERVIEW</h1>
+                <div class="videoBox">
+                  <video src="videos/in.mp4" controls></video>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      direction: "vertical",
+      slidesPerView: 1,
+      mousewheel: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
